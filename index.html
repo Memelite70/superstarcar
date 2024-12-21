@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | House of Hazards</title>
+    <script src="/js/games/index.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+		
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build.json");
+
+      window.addEventListener('DOMContentLoaded',function () {
+        var onResize;
+
+        (onResize = function() {
+          var canvas = gameInstance.Module.canvas;
+
+          canvas.width  = window.innerWidth;
+          canvas.height = window.innerHeight;
+        })();
+
+        window.addEventListener("resize", onResize);
+      });
+			const Crazygames = "";
+			
+																						 const t=e.data.options;Mr().setGameIframe(e.source),n.init(t);break;case"window.Crazygames.requestAd":const r=e.data.adType;n.requestAd(r);
+    </script>
+  </head>
+  <body style="margin: 0; padding: 0; overflow: hidden">
+  <div id="gameContainer" style="width: 100%; height: 100%"></div>
+  </body>
+</html>
